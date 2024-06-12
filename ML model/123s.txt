@@ -1,0 +1,11 @@
+numpy
+Pillow
+Keras
+tensorflow
+Flask
+Werkzeug
+gunicorn
+scipy
+gevent
+
+
