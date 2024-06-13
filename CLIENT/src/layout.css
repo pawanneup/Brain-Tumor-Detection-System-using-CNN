@@ -113,9 +113,12 @@
 }
 .header-icon{
     color: rgb(0, 0, 0);
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
-    padding-left: 1rem;
+    padding-left: 1 rem;
+}
+.ant-scroll-number{
+    font-size: 0.8rem;
 }
 .collapsed-sidebar{
     background-color: #005555;
@@ -323,6 +326,9 @@
   }
  .home-div .content{
     height: 100%;
+ }
+ .header{
+    background-color:rgb(226, 226, 226);
  }
 }
 

@@ -41,15 +41,24 @@
     text-align: center;
     height: 100%;
     width: 100%;
+    background-image: url(https://img.freepik.com/free-photo/white-paper-texture_1409-1346.jpg?w=1060&t=st=1718059934~exp=1718060534~hmac=f9e293cf515b5708f6cee458f28280bef21aa749f71e59230e85697abdbd17c1);
   }
-  
+  h2{
+    font-weight: 600;
+    font-size: 1.7rem;
+    
+    color: black;
+  }
+  h3{
+    font-weight: 500;
+  }
   .section-title {
     font-size: 25px;
     /* font-weight: bold; */
     color: #333333;
     font-weight: 650;
     margin-bottom: 5rem;
-    background-color: rgb(51, 51, 51);
+    background-color: #005555;
     /* border-top-left-radius: 12px;
   border-bottom-right-radius:12px ; */
     color: white;
@@ -94,7 +103,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
   .white{
     color: white;
