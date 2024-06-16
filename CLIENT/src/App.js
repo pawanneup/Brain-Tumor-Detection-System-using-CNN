@@ -36,7 +36,7 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route
-          path="/homepage"
+          path="/"
           element={
             <PublicRoute>
               <Homepage/>

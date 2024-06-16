@@ -145,12 +145,13 @@ code {
   background-color: white !important;
   text-decoration: none;
   border-radius: 3px;
-  margin: 10px;
+  margin: 20px;
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
 .new-btn{
   color: white !important;
+  margin-top: 10px;
 }
 /* Title Styling */
 .card-title {
@@ -179,5 +180,11 @@ code {
     margin-left: 0px;
     margin: 0px;
     padding: opx;
+  }
+  .homepage-btn{
+    margin: 0px;
+  }
+  .home-h2{
+    font-size: 0.6rem;
   }
 }

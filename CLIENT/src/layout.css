@@ -310,6 +310,9 @@
         
        
     }
+    .home-h2{
+        font-size: 0.8rem;
+     }
     .page-header{
         font-weight: bold;
     }
@@ -346,6 +349,9 @@
   }
  .home-div .content{
     height: 100%;
+ }
+ .home-h2{
+    font-size: 0.8rem;
  }
 }
 

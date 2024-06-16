@@ -35,9 +35,9 @@ function Home() {
               {/* <Button className="home-btn" to='/login' >Login</Button>
              <br/>
               <Button className="home-btn" to='/register'>Signup</Button> */}
-              <Link className='anchor homepage-btn p-2 primary-button mt-2'  to='/login'>Click Here To Login</Link>
+              <Link className='anchor homepage-btn m-2 p-2 primary-button mt-2'  to='/login'>Click Here To Login</Link>
               <br/>
-              <Link className='primary-button homepage-btn anchor p-2 mt-2'  to='/register'>Click Here To Register</Link>
+              <Link className='primary-button homepage-btn m-2 anchor p-2 mt-2'  to='/register'>Click Here To Register</Link>
               </h1>
              
           </div>
