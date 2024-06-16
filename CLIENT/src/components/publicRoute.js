@@ -5,7 +5,7 @@ import { Navigate } from 'react-router-dom';
 
 function PublicRoute(props) {
     if(localStorage.getItem('token')){
-        return <Navigate to="/"/>;
+        return <Navigate to="/book"/>;
     }else{
         return props.children;
     }

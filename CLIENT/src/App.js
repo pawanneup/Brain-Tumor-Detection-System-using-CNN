@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
-import Home from "./Pages/Home";
+// import Home from "./Pages/Home";
 import ProtectedRoute from './components/protectedRoute';
 import PublicRoute from './components/publicRoute';
 // import {Button} from "antd"
@@ -17,6 +17,7 @@ import Doctorslist from "./Pages/Admin/Doctorslist";
 import Userslist from "./Pages/Admin/Userslist";
 import Book from "./Pages/Book";
 import BookAppointment from "./Pages/BookAppointment";
+import Homepage from "./Pages/Homepage";  
 // import Userappointments from "./components/Userappointments";
 import Userprofile from "./Pages/Userprofile";
 import Doctorappointments from "./Pages/Doctorappointments";
@@ -35,10 +36,10 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route
-          path="/login"
+          path="/homepage"
           element={
             <PublicRoute>
-              <Login />
+              <Homepage/>
             </PublicRoute>
           }
         />
@@ -50,14 +51,22 @@ function App() {
             </PublicRoute>
           }
         />
-        <Route
+         <Route
+          path="/login"
+          element={
+            <PublicRoute>
+              <Login />
+            </PublicRoute>
+          }
+        />
+        {/* <Route
           path="/"
           element={
             <ProtectedRoute>
               <Home />
             </ProtectedRoute>
           }
-        />
+        /> */}
         <Route
           path="/book"
           element={

@@ -3,7 +3,7 @@
     padding-top: 10px;
 }
 .sidebar{
-    background-color: #005555;
+    background-color: #343434;
     border-radius: 5px;
     box-shadow:  0 0 2px gray;
     margin-right: 8px;
@@ -18,7 +18,7 @@
     font-weight: bolder;
 }
 .header{
-    background-color: rgb(239, 239, 239);
+    background-color:#ebebeb;
     border-radius: 5px;
     box-shadow: 0 0 2px gray;
     margin-bottom: 10px;
@@ -85,6 +85,7 @@
 }
 .menu-item{
     margin-top: 3rem;
+    font-weight: 450;
  
    
 }
@@ -95,39 +96,44 @@
 
 }
 .menu-item i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     margin-right: 0.6rem;
     font-size: 1.2rem;
     text-decoration: none;
+  
+}
+.profile-card{
+    background-color: #c8c7c7;
+    margin-top: 20px !important;
 }
 .active-menu-item{
     color: white;
-    background-color: #0e2f2f;
-    padding: 5px;
+    background-color: rgb(23, 23, 23);
+    padding: 6px;
     border-radius: 5px;
 }
 .menu-item:hover{
-    background-color:#103131;
+    background-color:black;
      color: white;
      border-radius: 5px;
 }
 .header-icon{
     color: rgb(0, 0, 0);
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
-    padding-left: 1 rem;
-}
-.ant-scroll-number{
-    font-size: 0.8rem;
+    padding-left: 1rem;
 }
 .collapsed-sidebar{
-    background-color: #005555;
+    background-color: #343434;
     border-radius: 5px;
     box-shadow:  0 0 2px gray;
     margin-right:06px;
     height: 100vh;
     padding: 8px;
-    width: 3.7rem;
+    width: 3.8rem;
 }
 .collapsed-sidebar .menu-item{
     display: flex;
@@ -142,7 +148,7 @@
 
 .underline{
     text-decoration: underline;
-    color: rgb(10, 90, 90);
+    color: red;
     font-size: 1rem;
 }
 
@@ -156,7 +162,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 91.4vh;
+    height: 100vh;
     background-image: url(https://st5.depositphotos.com/22341038/66783/i/600/depositphotos_667833068-stock-photo-mri-images-human-head-hands.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,8 +177,22 @@
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
-
-
+.home-btn{
+    width: 250px;
+    font-weight: bold;
+}
+.ant-btn{
+    margin: 5px;
+}
+.home-h2{
+    font-weight: bolder;
+   color: white;
+   font-size: 2rem;
+}
+/* .home-btn:hover{
+    background-color: #858282;
+    color: #ccc;
+} */
 .home-div .content {
     display: flex;
     justify-content: center;
@@ -222,7 +242,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #005555;
+    background-color: #343434;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -230,11 +250,11 @@
   }
   
   .search-button:hover {
-    background-color: #0e3333;
+    background-color: #343434;
   }
   
   .search-button:active {
-    background-color: #005555;
+    background-color: #343434;
   }
   
 
@@ -326,9 +346,6 @@
   }
  .home-div .content{
     height: 100%;
- }
- .header{
-    background-color:rgb(226, 226, 226);
  }
 }
 

@@ -58,10 +58,10 @@
     color: #333333;
     font-weight: 650;
     margin-bottom: 5rem;
-    background-color: #005555;
+    background-color: #343434;
     /* border-top-left-radius: 12px;
   border-bottom-right-radius:12px ; */
-    color: white;
+    color: white !important;
     padding: 8px;
 
   }
@@ -73,7 +73,7 @@
   
   .file-upload-label {
     background-color: #1677ff;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     font-weight: bold;
     padding: 10px 10px;
     border-radius: 5px;

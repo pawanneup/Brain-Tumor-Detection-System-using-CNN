@@ -73,8 +73,8 @@ code {
 }
 
 .primary-button{
-  background-color: #005555 !important;
-  border-color: #005555 !important;
+  background-color: #343434 !important;
+  border-color: #343434 !important;
   height: 40px !important;
   width: 100% !important;
   color: white !important;
@@ -91,7 +91,7 @@ code {
 
 .anchor:hover{
   text-decoration: underline;
-  color:#005555 !important;
+  color:black !important;
   font-size: 1rem !important;
 }
 .authentication{
@@ -140,7 +140,18 @@ code {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
   
 }
-
+.homepage-btn{
+  color: black !important;
+  background-color: white !important;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 10px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.new-btn{
+  color: white !important;
+}
 /* Title Styling */
 .card-title {
   font-size: 24px; /* Larger font size */

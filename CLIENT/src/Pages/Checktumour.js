@@ -77,7 +77,7 @@ import './Checktumor.css';
 function Checktumor() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [prediction, setPrediction] = useState('');
-  const [probability, setProbability] = useState('');
+  // const [probability, setProbability] = useState('');
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -100,7 +100,7 @@ function Checktumor() {
 
       // Update UI with response data
       setPrediction(response.data.prediction);
-      setProbability(response.data.probability.toFixed(2));
+      // setProbability(response.data.probability.toFixed(2));
       setStatus(response.data.status);
     } catch (error) {
       console.error("There was an error uploading the file!", error);
@@ -143,7 +143,6 @@ function Checktumor() {
             {prediction && (
               <div>
                 <h2>Prediction: {prediction}</h2>
-                <h3>Probability: {probability}%</h3>
                 <p>Status: {status}</p>
               </div>
             )}

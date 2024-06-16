@@ -20,11 +20,11 @@ function Layout({ children }) {
   //   navigate("/login");
   // };
   const userMenu = [
-    {
-      name: "Home",
-      path: "/",
-      icon: "ri-home-line",
-    },
+    // {
+    //   name: "Home",
+    //   path: "/",
+    //   icon: "ri-home-line",
+    // },
     {
       name: "Book a Doctor",
       path: "/book",
@@ -52,9 +52,14 @@ function Layout({ children }) {
     // },
   ];
   const doctorMenu = [
+    // {
+    //   name: "Home",
+    //   path: "/",
+    //   icon: "ri-home-line",
+    // },
     {
-      name: "Home",
-      path: "/",
+      name: "Doctors Profile",
+      path: "/book",
       icon: "ri-home-line",
     },
     {
@@ -62,6 +67,11 @@ function Layout({ children }) {
       path: "/checktumor",
       icon: "ri-hospital-line",
     },
+    // {
+    //   name: "Doctors Profile",
+    //   path: "/book",
+    //   icon: "ri-home-line",
+    // },
     {
       name: "Appointments",
       path: "/doctor/appointments",
@@ -79,9 +89,14 @@ function Layout({ children }) {
     },
   ];
   const adminMenu = [
-    {
-      name: "Home",
-      path: "/",
+    // {
+    //   name: "Home",
+    //   path: "/",
+    //   icon: "ri-home-line",
+    // },
+      {
+      name: "Appointment",
+      path: "/book",
       icon: "ri-home-line",
     },
     {
@@ -95,11 +110,11 @@ function Layout({ children }) {
       path: "/admin/doctors",
       icon: "ri-user-line",
     },
-    {
-      name: "Appointment",
-      path: "/book",
-      icon: "ri-home-line",
-    },
+    // {
+    //   name: "Appointment",
+    //   path: "/book",
+    //   icon: "ri-home-line",
+    // },
 
     // {
     //   name: "Profile",
@@ -144,7 +159,7 @@ function Layout({ children }) {
             })}
             <div className="d-flex menu-item" onClick={handleLogout}>
               <i className="ri-logout-circle-line"></i>
-              {!collapsed && <Link to="/login">Logout</Link>}
+              {!collapsed && <Link to="/homepage">Logout</Link>}
             </div>
           </div>
         </div>

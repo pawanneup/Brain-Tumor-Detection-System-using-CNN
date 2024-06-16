@@ -51,8 +51,12 @@ function Register() {
               <Button className='primary-button my-3' htmlType='submit'>
                 Register
               </Button>
-              <br/>
+              {/* <Button className='primary-button' >
+                Back To Homepage
+              </Button> */}
               <Link className='anchor mt-2'  to='/login'>Click Here To Login</Link>
+              
+              {/* <Link className='primary-button p-2 new-btn anchor mt-2'  to='/homepage'>Click Here To Login</Link> */}
             </Form>
         </div>
     </div>

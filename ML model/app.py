@@ -24,7 +24,7 @@ def predict(img):
     model = load_model('model.h5')
     pred = model.predict(img)
     if np.argmax(pred, axis=1)[0] == 0:
-        out_pred = "Brain Tumor: Symptoms include unexplained weight loss, double vision or a loss of vision, increased pressure felt in the back of the head, dizziness and a loss of balance, sudden inability to speak, hearing loss, weakness or numbness that gradually worsens on one side of the body.(Suggesting to make an Appointment and consult a Doctor ASAP)"
+        out_pred = "Brain Tumor: Common symptoms of brain tumours include headaches, feeling or being sick and seizures (fits).Long Term Symptoms can be unexpected weight loss, increased pressure felt in the back of the head, dizziness and a loss of balance, sudden inability to speak, hearing loss, weakness or numbness that gradually worsens on one side of the body.(Suggesting to make an Appointment and consult a Doctor ASAP)"
     else:
         out_pred = "Normal"
     return out_pred, float(np.max(pred))
@@ -50,7 +50,6 @@ async def upload_file(imagefile: UploadFile = File(...)):
 
     response = {
         "prediction": out_pred,
-        "probability": out_prob,
         "status": danger
     }
 

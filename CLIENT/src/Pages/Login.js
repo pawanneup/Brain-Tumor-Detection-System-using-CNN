@@ -64,7 +64,9 @@ const {loading } = useSelector(state=> state.alerts);
               </Button> */}
 
                 <br/>
-              <Link className='anchor mt-2'  to='/register'>Click Here To Register</Link>
+                <Link className='anchor mt-2'  to='/register'>Click Here To Register</Link>
+                
+              {/* <Link className='primary-button p-2 new-btn  anchor mt-2'  to='/homepage'>Back To Homepage</Link> */}
             </Form>
         </div>
     </div>
