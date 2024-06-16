@@ -46,7 +46,7 @@ function Appointment() {
     {
       title: "Date & Time",
       dataIndex: "createdAt",
-      render: (text, record) => <h1 className="card-text"> {moment(record.date).format("DD-MM-YY")} {moment(record.time).format("HH-mm")}</h1>,
+      render: (text, record) => <h1 className="card-text"> {moment(record.date).format("DD-MM-YYYY")} {moment(record.time).format("HH-mm")}</h1>,
     },
     {
       title: "status",

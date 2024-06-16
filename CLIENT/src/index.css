@@ -91,9 +91,10 @@ code {
 
 .anchor:hover{
   text-decoration: underline;
-  color:black !important;
+  color:rgb(255, 0, 0) !important;
   font-size: 1rem !important;
 }
+
 .authentication{
     height: 100vh;
     display: flex;
@@ -171,9 +172,20 @@ code {
 .card-text b {
   color: #000000; /* Bold text color */
 }
-
+.profile-name{
+  font-weight: bolder !important;
+  font-size: 3.6rem !important;
+}
 .ant-btn{
   width: 100%;
+  background-color: #333333;
+  padding: 15px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.ant-btn:hover{
+  background-color: black !important;
 }
 @media (max-width: 640px) {
   .authentication .card-title{

@@ -49,7 +49,7 @@ router.post("/update-doctor-profile", authMiddleware, async (req, res) => {
 });
 router.get("/get-appointments-by-doctor-id", authMiddleware, async (req, res) => {
   try {
-    const user = req.query.userId;
+    // const user = req.query.userId;
     const doctor = await Doctor.findOne({userId:req.body.userId})
     const appointments = await Appointment.find({doctorId: doctor._id});
     res.status(200).send({
@@ -103,7 +103,7 @@ router.post("/change-appointment-status", authMiddleware, async (req, res) => {
     const { appointmentId, status } = req.body;
 
    
-    const appointment = await Appointment.findById(appointmentId);
+    const appointment = await Appointment.findByIdAndUpdate(appointmentId,{status});
 
      
     if (!appointment) {

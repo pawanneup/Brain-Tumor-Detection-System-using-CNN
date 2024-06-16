@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("../models/userModel");
 const Doctor = require("../models/doctorModel");
 const Appointment = require('../models/appointmentModel');
-
+const upload = require("../config/uploadConfig");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const authMiddleware = require("../middlewares/authMiddleware");
@@ -13,8 +13,40 @@ const moment = require("moment");
 // const { upload } = require('../config/uploadConfig');
 // const cloudinary = require('cloudinary').v2;
 
-router.post("/register", async (req, res) => {
+// router.post("/register", async (req, res) => {
+//   try {
+//     const userExists = await User.findOne({ email: req.body.email });
+//     if (userExists) {
+//       return res
+//         .status(200)
+//         .send({ message: "user already exists", success: false });
+//     }
+
+//     const password = req.body.password;
+
+//     const salt = await bcrypt.genSalt(10);
+
+//     const hashedPassword = await bcrypt.hash(password, salt);
+
+//     req.body.password = hashedPassword;
+
+//     const newuser = new User(req.body);
+
+//     await newuser.save();
+
+//     res
+//       .status(200)
+//       .send({ message: "user created sucessfully", success: true });
+//   } catch (error) {
+//     console.log(error);
+//     res
+//       .status(500)
+//       .send({ message: "error creating user", success: false, error });
+//   }
+// });
+router.post("/register", upload.single("imageUrl"), async (req, res) => {
   try {
+    console.log(req.body);
     const userExists = await User.findOne({ email: req.body.email });
     if (userExists) {
       return res
@@ -27,6 +59,8 @@ router.post("/register", async (req, res) => {
     const salt = await bcrypt.genSalt(10);
 
     const hashedPassword = await bcrypt.hash(password, salt);
+
+    req.body.imageUrl = req.file ? req.file.path : "";
 
     req.body.password = hashedPassword;
 

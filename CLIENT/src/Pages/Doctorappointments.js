@@ -38,7 +38,7 @@ function Doctorappointment() {
       dispatch(showLoading()); // Show loading indicator before making the request
       const response = await axios.post(
         "/api/doctor/change-appointment-status",
-        { appointmentId: record._is, status:status },
+        { appointmentId: record._id, status:status},
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -81,7 +81,7 @@ function Doctorappointment() {
       render: (text, record) => (
         <h1 className="card-text">
           {" "}
-          {moment(record.date).format("DD-MM-YY")}{" "}
+          {moment(record.date).format("DD-MM-YYYY")}{" "}
           {moment(record.time).format("HH-mm")}
         </h1>
       ),
@@ -112,10 +112,11 @@ function Doctorappointment() {
             </h1>
           </div>
           )}
-
-          {/* {record.status === "approved" && <h1 className="anchor" onClick={()=>changeAppointmentStatus(record,'rejected')}>Reject</h1>}
+         
+{/* 
+           {record.status === "approved" && <h1 className="anchor" onClick={()=>changeAppointmentStatus(record,'rejected')}>Reject</h1>}
           {record.status === "blocked" && <h1 className="anchor" onClick={()=>changeAppointmentStatus(record,'unblocked')}>Unblock</h1>}
-          {record.status === "unblocked" && <h1 className="anchor"onClick={()=>changeAppointmentStatus(record,'blocked')} >Block</h1>} */}
+          {record.status === "unblocked" && <h1 className="anchor"onClick={()=>changeAppointmentStatus(record,'blocked')} >Block</h1>}  */}
         </div>
       ),
     },
