@@ -175,9 +175,9 @@ function BookAppointment() {
                   <TimePicker
                     format="HH:mm"
                     className="mt-3"
-                    onChange={(value) => {
+                    onChange={(time,timeString) => {
                       setIsAvailable(false);
-                      setTime(moment(value).format("HH:mm"));
+                      setTime(timeString);
                     }}
                   />
                 {!isAvailable &&   <Button
@@ -189,7 +189,10 @@ function BookAppointment() {
                   {isAvailable && (
                     <Button
                       className="primary-button mt-3 full-width-button"
-                      onClick={bookNow}
+                      onClick={()=>{
+                        bookNow();
+                        setIsAvailable(false);
+                      }}
                     >
                       Book Now
                     </Button>
